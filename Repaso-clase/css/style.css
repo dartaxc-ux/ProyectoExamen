@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#exam-02 {
+    width: 100%;
+}
+
+#exam-02 h2 {
+    text-align: center;
+}
+
+#exam-02-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    padding: 2rem;
+    height: 14rem;
+    list-style-position: inside;
+}
+
+#exam-02-stage-container {
+    width: calc((100% - 20px) / 2);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#exam-02-main-stage {
+    width: 100%;
+    height: calc((100% - 20px) / 2);
+    background-color: aqua;
+}
+
+#exam-02-secondary-stage {
+    width: 100%;
+    height: calc((100% - 20px) / 2);
+    background-color: aqua;
+}
+
+#exam-02-festival-info {
+    width: calc((100% - 20px) / 2);
+    height: 100%;
+    padding: 1rem;
+
+    background-color: orange;
+}
+
+@media screen and (max-width: 992px) {
+    #exam-02-container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    #exam-02-stage-container {
+        width: 100%;
+        height: calc(7rem);
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #exam-02-festival-info {
+        width: 100%;
+        height: 7rem;
+    }
+
+    #exam-02-main-stage,
+    #exam-02-secondary-stage {
+        width: calc((100% - 20px) / 2);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #exam-02-stage-container {
+        flex-direction: column;
+    }
+
+    #exam-02-main-stage, #exam-02-secondary-stage {
+        width: 100%;
+    }
+}

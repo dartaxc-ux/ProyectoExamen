@@ -1,0 +1,1 @@
+Guarda en esta carpeta la imagen de la calle que aparece en el PDF del examen tipo 02 y llámala city-guide.jpg.
